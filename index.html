@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="Site criado para o 1º desafio Hiring Coders" content="" />
+        <meta name="Luiz Arilo" content="" />
+        <title>Ofertas Black Friday</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Google Fontes-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- CSS-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navegação-->   
+                    
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Imagem Masterhead-->
+                <img class="img-fluid" src="assets/img/black_friday.png" alt="..." />
+                <h1 class="masthead-heading text-uppercase mb-0">Ofertas imperdíveis durante a Black Friday</h1>    
+            </div>
+        </header>
+               <!-- Quero ser avisado-->
+        <section class="page-section" id="aviso">
+            <div class="container">
+                <!-- Seção contato-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Quero ser avisado sobre as ofertas</h2>
+                <!-- Formulario contato-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm">
+                            <!-- Nome input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Coloque o seu nome" data-sb-validations="required" />
+                                <label for="name">Nome completo</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório.</div>
+                            </div>
+                            <!-- Email input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Endereço de e-mail</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">O e-mail é obrigatório.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">E-mail inválido.</div>
+                            </div>
+                            <!-- Cadastro bem sucessido-->
+                                                        <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Cadastro realizado com sucesso!</div>
+                                </div>
+                            </div>
+                            <!-- Erro no cadastro-->
+                           
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error no cadastro!</div></div>
+                            <!-- Botão de envio-->
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                <!-- Footer About Text-->
+                    <div class="row-align-items-center">
+                        <h1 class="row-align-items-center">SOBRE O SITE</h1>
+                        <p class="lead mb-0">
+                            Landing page criada para o 1º desafio do programa Hiring Coders
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
