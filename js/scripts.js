@@ -1,12 +1,4 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.2 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
+/* 
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -52,3 +44,26 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+ */
+
+$(function(){
+    var tbClientes = localStorage.getItem("tbClientes");
+    tbClientes = JSON.parse(tbClientes); 
+    if(tbClientes == null)
+    tbClientes = [];
+});
+
+function Adicionar(){
+    var cliente = JSON.stringify({
+        Nome     : $("name").val(),
+        Email    : $("email").val()
+    });
+    tbClientes.push(cliente);
+	localStorage.setItem("tbClientes", JSON.stringify(tbClientes));
+	alert("Registro adicionado.");
+	return true;
+}
+
+$("#contactForm").on("submit",function(){
+			return Adicionar();
+}); 

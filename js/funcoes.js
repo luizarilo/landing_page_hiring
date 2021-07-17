@@ -1,4 +1,4 @@
-/* $(function(){
+$(function(){
     var tbClientes = localStorage.getItem("tbClientes");
     tbClientes = JSON.parse(tbClientes); 
     if(tbClientes == null)
@@ -18,4 +18,4 @@ function Adicionar(){
 
 $("#contactForm").on("submit",function(){
 			return Adicionar();
-}); */
+}); 
