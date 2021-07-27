@@ -284,8 +284,8 @@ button:focus:not(:focus-visible) {
 
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: 	#1C1C1C;
+  border-color: 	#1C1C1C;
 }
 .btn-primary:hover {
   color: #fff;
